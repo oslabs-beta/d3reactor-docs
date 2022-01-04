@@ -1,7 +1,7 @@
 export default {
   github: 'https://github.com/oslabs-beta/d3reacts-docs',
   docsRepositoryBase: 'https://github.com/oslabs-beta/d3reacts-docs',
-  titleSuffix: ' – D3 Reacts',
+  titleSuffix: 'D3 Reacts',
   logo: (
     <>
       <span className="mr-2 font-extrabold hidden md:inline">D3 Reacts</span>
