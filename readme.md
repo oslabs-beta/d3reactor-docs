@@ -8,4 +8,4 @@ To install
 ```
 yarn dev or npm dev
 ```
-to start application# d3reacts-docs
+to start application
