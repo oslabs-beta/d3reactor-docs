@@ -14,8 +14,9 @@ Get started with a CRA or create next app.
 
 
 ```shell
-npm i D3reacts  
+npm i D3reacts
 ```
+
 ```shell
 yarn install D3reacts
 ```

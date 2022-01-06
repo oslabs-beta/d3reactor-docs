@@ -1,8 +1,8 @@
 {
   "unversionedId": "Charts/bar-chart",
   "id": "Charts/bar-chart",
-  "title": "Bar Chart",
-  "description": "Props",
+  "title": "Area Chart",
+  "description": "Area chart example and sandbox here",
   "source": "@site/docs/Charts/bar-chart.md",
   "sourceDirName": "Charts",
   "slug": "/Charts/bar-chart",
