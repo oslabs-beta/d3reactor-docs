@@ -28,7 +28,7 @@
           },
           {
             "type": "link",
-            "label": "Area Chart",
+            "label": "Bar Chart",
             "href": "/docs/Charts/bar-chart",
             "docId": "Charts/bar-chart"
           }
@@ -45,8 +45,8 @@
     },
     "Charts/bar-chart": {
       "id": "Charts/bar-chart",
-      "title": "Area Chart",
-      "description": "Area chart example and sandbox here",
+      "title": "Bar Chart",
+      "description": "Props",
       "sidebar": "tutorialSidebar"
     },
     "intro": {

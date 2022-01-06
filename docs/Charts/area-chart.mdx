@@ -2,35 +2,34 @@
 
 ## Area chart example and sandbox here
 
-```jsx
+```jsx live
 function Clock(props) {
-  const [date, setDate] = useState(new Date())
+  const [date, setDate] = useState(new Date());
   useEffect(() => {
-    var timerID = setInterval(() => tick(), 1000)
+    var timerID = setInterval(() => tick(), 1000);
 
     return function cleanup() {
-      clearInterval(timerID)
-    }
-  })
+      clearInterval(timerID);
+    };
+  });
 
   function tick() {
-    setDate(new Date())
+    setDate(new Date());
   }
 
   return (
     <div>
       <h2>It is {date.toLocaleTimeString()}.</h2>
     </div>
-  )
+  );
 }
 ```
 
 ## Data
 
-**type:** array[object]
+__type:__ array[object]
 
 ### Single example
-
 ```shell
 ### Data Format Example Single
 [
@@ -48,9 +47,7 @@ function Clock(props) {
  },
 ]
 ```
-
 ### Multi example
-
 ```shell
 ### Data Format Example Multi
 
@@ -72,39 +69,37 @@ function Clock(props) {
  },
 ]
 ```
-
 ## Props
 
 ### Height
 
-| Prop     | Type               | Optional | Default |
-| -------- | ------------------ | -------- | ------- |
-| `height` | `string or number` | `true`   | `100%`  |
+| Prop               | Type               | Optional  | Default |
+| ------------------ | ------------------ | --------- | ------- |
+| `height`           | `string or number` | `true`    | `100%`  |
 
 ### Width
 
-| Prop    | Type               | Optional | Default |
-| ------- | ------------------ | -------- | ------- |
-| `width` | `string or number` | `true`   | `100%`  |
+| Prop               | Type               | Optional  | Default |
+| ------------------ | ------------------ | --------- | ------- |
+| `width`           | `string or number` | `true`    | `100%`  |
 
 ### xKey
+__type:__ string
+__optional:__ false
+__requirements:__ A key of properties in array data objects used on x Axis.
 
-**type:** string
-**optional:** false
-**requirements:** A key of properties in array data objects used on x Axis.
-
-| Prop   | Type     | Optional | Requirements                                                |
-| ------ | -------- | -------- | ----------------------------------------------------------- |
-| `xKey` | `string` | `false`  | `A key of properties in array data objects used on x Axis.` |
+| Prop               | Type               | Optional  | Requirements |
+| ------------------ | ------------------ | --------- | ------------ |
+| `xKey`             | `string`           | `false`   | `A key of properties in array data objects used on x Axis.`  |
 
 ### yKey
+__type:__ string
+__optional:__ false
+__requirements:__ A key of properties in array data objects used on x Axis.
 
-**type:** string
-**optional:** false
-**requirements:** A key of properties in array data objects used on x Axis.
+| Prop               | Type               | Optional  | Requirements |
+| ------------------ | ------------------ | --------- | ------------ |
+| `xKey`             | `string`           | `false`   | `A key of properties in array data objects used on y Axis.`  |
 
-| Prop   | Type     | Optional | Requirements                                                |
-| ------ | -------- | -------- | ----------------------------------------------------------- |
-| `xKey` | `string` | `false`  | `A key of properties in array data objects used on y Axis.` |
 
-{/_## Custom Themes_/}
+

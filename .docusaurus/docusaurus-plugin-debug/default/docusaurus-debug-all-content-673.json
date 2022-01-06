@@ -37,20 +37,20 @@
                 "permalink": "/docs/intro"
               },
               "next": {
-                "title": "Area Chart",
+                "title": "Bar Chart",
                 "permalink": "/docs/Charts/bar-chart"
               }
             },
             {
               "unversionedId": "Charts/bar-chart",
               "id": "Charts/bar-chart",
-              "title": "Area Chart",
-              "description": "Area chart example and sandbox here",
-              "source": "@site/docs/Charts/bar-chart.md",
+              "title": "Bar Chart",
+              "description": "Props",
+              "source": "@site/docs/Charts/bar-chart.mdx",
               "sourceDirName": "Charts",
               "slug": "/Charts/bar-chart",
               "permalink": "/docs/Charts/bar-chart",
-              "editUrl": "https://github.com/oslabs-beta/d3reacts-website/docs/Charts/bar-chart.md",
+              "editUrl": "https://github.com/oslabs-beta/d3reacts-website/docs/Charts/bar-chart.mdx",
               "tags": [],
               "version": "current",
               "frontMatter": {},
