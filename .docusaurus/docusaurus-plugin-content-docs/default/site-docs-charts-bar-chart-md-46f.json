@@ -1,0 +1,19 @@
+{
+  "unversionedId": "Charts/bar-chart",
+  "id": "Charts/bar-chart",
+  "title": "Bar Chart",
+  "description": "Props",
+  "source": "@site/docs/Charts/bar-chart.md",
+  "sourceDirName": "Charts",
+  "slug": "/Charts/bar-chart",
+  "permalink": "/docs/Charts/bar-chart",
+  "editUrl": "https://github.com/oslabs-beta/d3reacts-website/docs/Charts/bar-chart.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Area Chart",
+    "permalink": "/docs/Charts/area-chart"
+  }
+}
