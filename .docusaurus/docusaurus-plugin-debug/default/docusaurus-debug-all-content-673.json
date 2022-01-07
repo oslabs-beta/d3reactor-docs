@@ -14,9 +14,9 @@
           "versionClassName": "docs-version-current",
           "isLast": true,
           "routePriority": -1,
-          "sidebarFilePath": "/Users/travislockett/Codesmith/OSP/docs/sidebars.js",
-          "contentPath": "/Users/travislockett/Codesmith/OSP/docs/docs",
-          "contentPathLocalized": "/Users/travislockett/Codesmith/OSP/docs/i18n/en/docusaurus-plugin-content-docs/current",
+          "sidebarFilePath": "/Volumes/Faero2TB/DocumentsEXT/Codesmith/projects/OSP/d3reacts-docs/sidebars.js",
+          "contentPath": "/Volumes/Faero2TB/DocumentsEXT/Codesmith/projects/OSP/d3reacts-docs/docs",
+          "contentPathLocalized": "/Volumes/Faero2TB/DocumentsEXT/Codesmith/projects/OSP/d3reacts-docs/i18n/en/docusaurus-plugin-content-docs/current",
           "docs": [
             {
               "unversionedId": "Charts/area-chart",
@@ -58,6 +58,10 @@
               "previous": {
                 "title": "Area Chart",
                 "permalink": "/docs/Charts/area-chart"
+              },
+              "next": {
+                "title": "Legend",
+                "permalink": "/docs/Sub-Components/legend"
               }
             },
             {
@@ -81,6 +85,25 @@
                 "title": "Area Chart",
                 "permalink": "/docs/Charts/area-chart"
               }
+            },
+            {
+              "unversionedId": "Sub-Components/legend",
+              "id": "Sub-Components/legend",
+              "title": "Legend",
+              "description": "legend example and sandbox here",
+              "source": "@site/docs/Sub-Components/legend.mdx",
+              "sourceDirName": "Sub-Components",
+              "slug": "/Sub-Components/legend",
+              "permalink": "/docs/Sub-Components/legend",
+              "editUrl": "https://github.com/oslabs-beta/d3reacts-website/docs/Sub-Components/legend.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {},
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Bar Chart",
+                "permalink": "/docs/Charts/bar-chart"
+              }
             }
           ],
           "sidebars": {
@@ -102,6 +125,18 @@
                   {
                     "type": "doc",
                     "id": "Charts/bar-chart"
+                  }
+                ]
+              },
+              {
+                "type": "category",
+                "label": "Sub-Components",
+                "collapsible": true,
+                "collapsed": true,
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "Sub-Components/legend"
                   }
                 ]
               }

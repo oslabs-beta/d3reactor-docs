@@ -1,0 +1,19 @@
+{
+  "unversionedId": "Sub-Components/legend",
+  "id": "Sub-Components/legend",
+  "title": "Legend",
+  "description": "legend example and sandbox here",
+  "source": "@site/docs/Sub-Components/legend.mdx",
+  "sourceDirName": "Sub-Components",
+  "slug": "/Sub-Components/legend",
+  "permalink": "/docs/Sub-Components/legend",
+  "editUrl": "https://github.com/oslabs-beta/d3reacts-website/docs/Sub-Components/legend.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Bar Chart",
+    "permalink": "/docs/Charts/bar-chart"
+  }
+}

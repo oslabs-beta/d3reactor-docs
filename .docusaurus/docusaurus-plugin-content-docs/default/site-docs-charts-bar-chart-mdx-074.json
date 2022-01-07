@@ -15,5 +15,9 @@
   "previous": {
     "title": "Area Chart",
     "permalink": "/docs/Charts/area-chart"
+  },
+  "next": {
+    "title": "Legend",
+    "permalink": "/docs/Sub-Components/legend"
   }
 }
