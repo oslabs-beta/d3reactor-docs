@@ -33,6 +33,20 @@
             "docId": "Charts/bar-chart"
           }
         ]
+      },
+      {
+        "type": "category",
+        "label": "Sub-Components",
+        "collapsible": true,
+        "collapsed": true,
+        "items": [
+          {
+            "type": "link",
+            "label": "Legend",
+            "href": "/docs/Sub-Components/legend",
+            "docId": "Sub-Components/legend"
+          }
+        ]
       }
     ]
   },
@@ -53,6 +67,12 @@
       "id": "intro",
       "title": "Installation",
       "description": "Let's get your first D3 reacts chart set up in less < 5 minutes.",
+      "sidebar": "tutorialSidebar"
+    },
+    "Sub-Components/legend": {
+      "id": "Sub-Components/legend",
+      "title": "Legend",
+      "description": "legend example and sandbox here",
       "sidebar": "tutorialSidebar"
     }
   }

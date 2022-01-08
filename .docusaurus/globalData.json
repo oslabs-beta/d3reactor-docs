@@ -24,6 +24,11 @@
               "id": "intro",
               "path": "/docs/intro",
               "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Sub-Components/legend",
+              "path": "/docs/Sub-Components/legend",
+              "sidebar": "tutorialSidebar"
             }
           ]
         }
