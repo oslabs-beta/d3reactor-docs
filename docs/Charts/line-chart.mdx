@@ -1,0 +1,231 @@
+# Area Chart
+
+## Area chart example and sandbox here
+
+```jsx live
+function Clock(props) {
+  const [date, setDate] = useState(new Date());
+  useEffect(() => {
+    var timerID = setInterval(() => tick(), 1000);
+
+    return function cleanup() {
+      clearInterval(timerID);
+    };
+  });
+
+  function tick() {
+    setDate(new Date());
+  }
+
+  return (
+    <div>
+      <h2>It is {date.toLocaleTimeString()}.</h2>
+    </div>
+  );
+}
+```
+
+## Data
+
+__type:__ array[object]
+
+### Single example
+```shell
+### Data Format Example Single
+[
+  {
+    "culmen_length_mm": 39.1,
+    "body_mass_g": 3750,
+  },
+  {
+    "culmen_length_mm": 36.7,
+    "body_mass_g": 3450,
+  },
+  {
+    "culmen_length_mm": 39.3,
+    "body_mass_g": 3650,
+ },
+]
+```
+### Multi example
+```shell
+### Data Format Example Multi
+
+[
+ {
+   "date": "Thu Feb 01 2018 00:00:00 GMT-0500 (Eastern Standard Time)",
+   "fruit": "apples",
+   "value": 10
+ },
+ {
+   "date": "Thu Mar 01 2018 00:00:00 GMT-0500 (Eastern Standard Time)",
+   "fruit": "apples",
+   "value": 15
+ },
+ {
+    "date": "Thu Feb 01 2018 00:00:00 GMT-0500 (Eastern Standard Time)",
+    "fruit": "oranges",
+    "value": 15
+  },
+  {
+    "date": "Thu Mar 01 2018 00:00:00 GMT-0500 (Eastern Standard Time)",
+    "fruit": "oranges",
+    "value": 15
+  },
+]
+```
+## Props
+
+
+### data
+
+| Prop               | Type               | Optional  |
+| ------------------ | ------------------ | --------- | 
+| `data`             | `array of objects` | `false`   |
+
+### xKey
+
+This string is used as the accessor for your data in the X domain. **This should match the property name from your data that you want to use for your X values.** For example, if we want to show the quantity of fruit over time using the above dataset, 'date' will be our xKey value.
+
+| Prop               | Type               | Optional  | Requirements |
+| ------------------ | ------------------ | --------- | ------------ |
+| `xKey`             | `string`           | `false`   | `A key corresponding to the properties in array of data objects used on x axis.`  |
+
+
+### yKey
+
+This string is used as the accessor for the Y values of your data. **This should match the property name from your data that you want to use for your Y values.** For example, if we want to show the quantity of fruit using the above dataset, 'value' will be our yKey value.
+
+| Prop               | Type               | Optional  | Requirements |
+| ------------------ | ------------------ | --------- | ------------ |
+| `yKey`             | `string`           | `false`   | `A key corresponding to the properties in array of data objects used on y axis.`  |
+
+
+### xDataType *(optional)*
+
+By default, D3Reacts will attempt to infer whether the data accessed by `xKey` is a valid date. *(If it is, it will use D3's scaleTime method to create the X axis rather than scaleLinear. This helps create more readable X axis ticks.)*
+By passing in a value to xDataType, you can manually set how you want D3Reacts to interperet your data.
+
+| Prop               | Type                            | Optional  | Default |
+| ------------------ | ------------------              | --------- | ------- |
+| `xDataType`        | `"number" | "date" | undefined` | `true`    | `undefined` | 
+
+
+### groupBy *(optional)*
+
+To create a multi-area chart, pass in a string to groupBy. **This string should match the property name from your data that represents the distinct groups you want to show.** For example, in the above dataset our groups are stored in the property name 'fruit'.
+
+| Prop               | Type      | Optional  | Default     | Requirements |
+| ------------------ | ----------| --------- | -------     |------------- |
+| `groupBy`          | `string`  | `true`    | `undefined` | `A key corresponding to the properties in array of data objects used to denote groups.`  |
+
+
+### xAxis *(optional)*
+
+| Prop               | Type                         | Optional  | Default |
+| ------------------ | --------                     | --------- | ------- |
+| `xAxis`            | `"top"`, `"bottom"`, `false` | `true`    | `'bottom'` |
+
+*If left undefined, the X axis will by default be rendered at the bottom.*
+
+
+### yAxis *(optional)*
+
+| Prop               | Type                         | Optional  | Default |
+| ------------------ | --------                     | --------- | ------- |
+| `yAxis`            | `"left"`, `"right"`, `false` | `true`    | `'bottom'` |
+
+*If left undefined, the Y axis will by default be rendered on the left.*
+
+
+### xGrid *(optional)*
+
+Displays horizontal grid lines on chart.
+
+| Prop               | Type      | Optional  | Default |
+| ------------------ | --------  | --------- | ------- |
+| `xGrid`            | `boolean` | `true`    | `false` |
+
+
+### yGrid *(optional)*
+
+Displays vertical grid lines on chart.
+
+| Prop               | Type      | Optional  | Default |
+| ------------------ | --------  | --------- | ------- |
+| `yGrid`            | `boolean` | `true`    | `false` |
+
+
+### xAxisLabel *(optional)*
+
+Adds a label to your X axis.
+
+| Prop               | Type      | Optional  |
+| ------------------ | --------  | --------- |
+| `xAxisLabel`       | `string`  | `true`    |
+
+
+### yAxisLabel *(optional)*
+
+Adds a label to your Y axis.
+
+| Prop               | Type      | Optional  |
+| ------------------ | --------  | --------- |
+| `yAxisLabel`       | `string`  | `true`    |
+
+
+### legend *(optional)*
+Each chart has the option to include a legend which shows what category from your data each color represents. The legend and chart are both responsive, so they will resize to make space for each other.
+The categories reflect the list of unique values stored at the property in your dataset accessed by `groupBy`.
+
+| Prop     | Type               | Optional | Default |
+| -------- | ------------------ | -------- | ------- |
+| `legend` | `boolean` or `"top"`, `"bottom"`, `"left"`, `"right"` , `"top-left"`, `"top-right"`, `"bottom-left"`, `"bottom-right"`, `"left-bottom"`, `"right-bottom"`, `"left-top"`, `"right-top"` | `true`   | `false`  |
+
+*If `true`, the legend will default to position `right`.*
+
+
+### legendLabel *(optional)*
+
+This is the title at the top of the legend. 
+*If the value is an empty string (`''`), the legend label will not render.*
+
+| Prop    | Type           | Optional | Default |
+| ------- | -------------- | -------- | ------- |
+| `legendLabel` | `string` | `true`   | `''`    |
+
+*You must specify a `legend` property if you wish to use `legendLabel`*
+
+
+### height
+
+Sets the overall height of the chart, in pixels or percentage.
+
+| Prop               | Type               | Optional  | Default |
+| ------------------ | ------------------ | --------- | ------- |
+| `height`           | `string or number` | `true`    | `100%`  |
+
+
+### width
+
+Sets the overall width of the chart, in pixels or percentage.
+
+| Prop               | Type               | Optional  | Default |
+| ------------------ | ------------------ | --------- | ------- |
+| `width`           | `string or number` | `true`    | `100%`  |
+
+
+### colorScheme
+
+Sets the color scheme of the chart body. Accepts an array of strings, each representing a color *(e.g. 'red', 'rgb(63,63,63)', '#9dc8e2', etc.)*. The order of colors should match the order of unique groups accessed by groupBy in your dataset.
+
+| Prop               | Type               | Optional  | Default |
+| ------------------ | ------------------ | --------- | ------- |
+| `colorScheme`      | `array of strings` | `true`    | 8 colors between "#9dc8e2" and "#07316b"  |
+
+*If the number of unique groups exceeds the number of colors in the array, the colors will loop, repeating in order until all groups are colored.*
+
+
+
+
+

@@ -55,7 +55,6 @@ const config = {
 						position: "left",
 						label: "Docs",
 					},
-					{ to: "/blog", label: "Blog", position: "left" },
 					{
 						href: "https://github.com/oslabs-beta/d3reacts-website",
 						label: "GitHub",

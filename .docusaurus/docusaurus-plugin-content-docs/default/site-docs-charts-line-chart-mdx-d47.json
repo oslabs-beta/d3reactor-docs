@@ -1,0 +1,23 @@
+{
+  "unversionedId": "Charts/line-chart",
+  "id": "Charts/line-chart",
+  "title": "Area Chart",
+  "description": "Area chart example and sandbox here",
+  "source": "@site/docs/Charts/line-chart.mdx",
+  "sourceDirName": "Charts",
+  "slug": "/Charts/line-chart",
+  "permalink": "/docs/Charts/line-chart",
+  "editUrl": "https://github.com/oslabs-beta/d3reacts-website/docs/Charts/line-chart.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Bar Chart",
+    "permalink": "/docs/Charts/bar-chart"
+  },
+  "next": {
+    "title": "Legend",
+    "permalink": "/docs/Sub-Components/legend"
+  }
+}

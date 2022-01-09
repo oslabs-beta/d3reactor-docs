@@ -16,7 +16,7 @@ export default {
       "classic",
       {
         "docs": {
-          "sidebarPath": "/Volumes/Faero2TB/DocumentsEXT/Codesmith/projects/OSP/d3reacts-docs/sidebars.js",
+          "sidebarPath": "/Users/travislockett/Codesmith/OSP/docs/sidebars.js",
           "editUrl": "https://github.com/oslabs-beta/d3reacts-website"
         },
         "blog": {
@@ -24,7 +24,7 @@ export default {
           "editUrl": "https://github.com/oslabs-beta/d3reacts-website/"
         },
         "theme": {
-          "customCss": "/Volumes/Faero2TB/DocumentsEXT/Codesmith/projects/OSP/d3reacts-docs/src/css/custom.css",
+          "customCss": "/Users/travislockett/Codesmith/OSP/docs/src/css/custom.css",
           "themes": [
             "@docusaurus/theme-live-codeblock"
           ]
@@ -45,11 +45,6 @@ export default {
           "docId": "intro",
           "position": "left",
           "label": "Docs"
-        },
-        {
-          "to": "/blog",
-          "label": "Blog",
-          "position": "left"
         },
         {
           "href": "https://github.com/oslabs-beta/d3reacts-website",

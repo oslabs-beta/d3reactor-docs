@@ -13,7 +13,7 @@
   "frontMatter": {},
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "Bar Chart",
-    "permalink": "/docs/Charts/bar-chart"
+    "title": "Area Chart",
+    "permalink": "/docs/Charts/line-chart"
   }
 }
