@@ -43,9 +43,10 @@ const config = {
 		/** @type {import('@docusaurus/preset-classic').ThemeConfig} */
 		({
 			navbar: {
-				title: "D3 Reacts",
+				title: "",
 				logo: {
-					alt: "D3 Reacts",
+					href: "https://d3reacts-website.vercel.app/",
+					alt: "D3 Reacts Logo",
 					src: "img/logo.svg",
 				},
 				items: [

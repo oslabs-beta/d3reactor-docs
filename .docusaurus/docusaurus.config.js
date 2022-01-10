@@ -34,9 +34,10 @@ export default {
   ],
   "themeConfig": {
     "navbar": {
-      "title": "D3 Reacts",
+      "title": "",
       "logo": {
-        "alt": "D3 Reacts",
+        "href": "https://d3reacts-website.vercel.app/",
+        "alt": "D3 Reacts Logo",
         "src": "img/logo.svg"
       },
       "items": [
