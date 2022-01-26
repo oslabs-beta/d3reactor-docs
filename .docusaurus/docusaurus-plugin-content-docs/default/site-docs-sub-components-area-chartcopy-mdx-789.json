@@ -1,0 +1,19 @@
+{
+  "unversionedId": "Sub-Components/area-chartcopy",
+  "id": "Sub-Components/area-chartcopy",
+  "title": "Area Chart",
+  "description": "Area chart example and sandbox here",
+  "source": "@site/docs/Sub-Components/area-chartcopy.mdx",
+  "sourceDirName": "Sub-Components",
+  "slug": "/Sub-Components/area-chartcopy",
+  "permalink": "/docs/Sub-Components/area-chartcopy",
+  "editUrl": "https://github.com/oslabs-beta/d3reacts-website/docs/Sub-Components/area-chartcopy.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Bar Chart",
+    "permalink": "/docs/Charts/bar-chart"
+  }
+}

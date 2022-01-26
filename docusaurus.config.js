@@ -43,9 +43,10 @@ const config = {
 		/** @type {import('@docusaurus/preset-classic').ThemeConfig} */
 		({
 			navbar: {
-				title: "D3 Reacts",
+				title: "",
 				logo: {
-					alt: "D3 Reacts",
+					href: "https://d3reacts-website.vercel.app/",
+					alt: "D3 Reacts Logo",
 					src: "img/logo.svg",
 				},
 				items: [
@@ -55,7 +56,6 @@ const config = {
 						position: "left",
 						label: "Docs",
 					},
-					{ to: "/blog", label: "Blog", position: "left" },
 					{
 						href: "https://github.com/oslabs-beta/d3reacts-website",
 						label: "GitHub",
@@ -83,10 +83,7 @@ const config = {
 					{
 						title: "More",
 						items: [
-							{
-								label: "Blog",
-								to: "/blog",
-							},
+				
 							{
 								label: "GitHub",
 								href: "https://github.com/oslabs-beta/d3reacts-website",
