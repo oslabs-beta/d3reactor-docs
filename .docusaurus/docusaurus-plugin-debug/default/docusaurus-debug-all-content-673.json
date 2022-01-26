@@ -14,9 +14,9 @@
           "versionClassName": "docs-version-current",
           "isLast": true,
           "routePriority": -1,
-          "sidebarFilePath": "/Users/travislockett/Codesmith/OSP/docs/sidebars.js",
-          "contentPath": "/Users/travislockett/Codesmith/OSP/docs/docs",
-          "contentPathLocalized": "/Users/travislockett/Codesmith/OSP/docs/i18n/en/docusaurus-plugin-content-docs/current",
+          "sidebarFilePath": "/Volumes/Faero2TB/DocumentsEXT/Codesmith/projects/OSP/d3reacts-docs/sidebars.js",
+          "contentPath": "/Volumes/Faero2TB/DocumentsEXT/Codesmith/projects/OSP/d3reacts-docs/docs",
+          "contentPathLocalized": "/Volumes/Faero2TB/DocumentsEXT/Codesmith/projects/OSP/d3reacts-docs/i18n/en/docusaurus-plugin-content-docs/current",
           "docs": [
             {
               "unversionedId": "Charts/area-chart",
