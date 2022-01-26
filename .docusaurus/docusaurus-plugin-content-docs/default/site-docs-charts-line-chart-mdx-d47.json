@@ -1,8 +1,8 @@
 {
   "unversionedId": "Charts/line-chart",
   "id": "Charts/line-chart",
-  "title": "Area Chart",
-  "description": "Area chart example and sandbox here",
+  "title": "Line Chart",
+  "description": "Line chart example and sandbox here",
   "source": "@site/docs/Charts/line-chart.mdx",
   "sourceDirName": "Charts",
   "slug": "/Charts/line-chart",
@@ -17,7 +17,7 @@
     "permalink": "/docs/Charts/bar-chart"
   },
   "next": {
-    "title": "Legend",
-    "permalink": "/docs/Sub-Components/legend"
+    "title": "Scatter Plot",
+    "permalink": "/docs/Charts/scatter-plot"
   }
 }

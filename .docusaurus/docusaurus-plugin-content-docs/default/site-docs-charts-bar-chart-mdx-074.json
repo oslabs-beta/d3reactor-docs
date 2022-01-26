@@ -2,7 +2,7 @@
   "unversionedId": "Charts/bar-chart",
   "id": "Charts/bar-chart",
   "title": "Bar Chart",
-  "description": "Props",
+  "description": "Bar chart example and sandbox here",
   "source": "@site/docs/Charts/bar-chart.mdx",
   "sourceDirName": "Charts",
   "slug": "/Charts/bar-chart",
@@ -17,7 +17,7 @@
     "permalink": "/docs/Charts/area-chart"
   },
   "next": {
-    "title": "Area Chart",
+    "title": "Line Chart",
     "permalink": "/docs/Charts/line-chart"
   }
 }

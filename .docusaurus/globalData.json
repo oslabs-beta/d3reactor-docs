@@ -26,13 +26,13 @@
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "intro",
-              "path": "/docs/intro",
+              "id": "Charts/scatter-plot",
+              "path": "/docs/Charts/scatter-plot",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "Sub-Components/legend",
-              "path": "/docs/Sub-Components/legend",
+              "id": "intro",
+              "path": "/docs/intro",
               "sidebar": "tutorialSidebar"
             }
           ]

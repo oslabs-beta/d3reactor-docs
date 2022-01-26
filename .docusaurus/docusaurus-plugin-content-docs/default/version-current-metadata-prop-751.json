@@ -34,23 +34,15 @@
           },
           {
             "type": "link",
-            "label": "Area Chart",
+            "label": "Line Chart",
             "href": "/docs/Charts/line-chart",
             "docId": "Charts/line-chart"
-          }
-        ]
-      },
-      {
-        "type": "category",
-        "label": "Sub-Components",
-        "collapsible": true,
-        "collapsed": true,
-        "items": [
+          },
           {
             "type": "link",
-            "label": "Legend",
-            "href": "/docs/Sub-Components/legend",
-            "docId": "Sub-Components/legend"
+            "label": "Scatter Plot",
+            "href": "/docs/Charts/scatter-plot",
+            "docId": "Charts/scatter-plot"
           }
         ]
       }
@@ -66,25 +58,25 @@
     "Charts/bar-chart": {
       "id": "Charts/bar-chart",
       "title": "Bar Chart",
-      "description": "Props",
+      "description": "Bar chart example and sandbox here",
       "sidebar": "tutorialSidebar"
     },
     "Charts/line-chart": {
       "id": "Charts/line-chart",
-      "title": "Area Chart",
-      "description": "Area chart example and sandbox here",
+      "title": "Line Chart",
+      "description": "Line chart example and sandbox here",
+      "sidebar": "tutorialSidebar"
+    },
+    "Charts/scatter-plot": {
+      "id": "Charts/scatter-plot",
+      "title": "Scatter Plot",
+      "description": "Scatter Plot example and sandbox here",
       "sidebar": "tutorialSidebar"
     },
     "intro": {
       "id": "intro",
       "title": "Installation",
       "description": "Let's get your first D3 reacts chart set up in less < 5 minutes.",
-      "sidebar": "tutorialSidebar"
-    },
-    "Sub-Components/legend": {
-      "id": "Sub-Components/legend",
-      "title": "Legend",
-      "description": "legend example and sandbox here",
       "sidebar": "tutorialSidebar"
     }
   }

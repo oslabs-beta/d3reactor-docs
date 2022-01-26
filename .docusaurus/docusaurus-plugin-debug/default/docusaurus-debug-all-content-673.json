@@ -14,9 +14,9 @@
           "versionClassName": "docs-version-current",
           "isLast": true,
           "routePriority": -1,
-          "sidebarFilePath": "/Users/travislockett/Codesmith/OSP/docs/sidebars.js",
-          "contentPath": "/Users/travislockett/Codesmith/OSP/docs/docs",
-          "contentPathLocalized": "/Users/travislockett/Codesmith/OSP/docs/i18n/en/docusaurus-plugin-content-docs/current",
+          "sidebarFilePath": "/Volumes/Faero2TB/DocumentsEXT/Codesmith/projects/OSP/d3reacts-docs/sidebars.js",
+          "contentPath": "/Volumes/Faero2TB/DocumentsEXT/Codesmith/projects/OSP/d3reacts-docs/docs",
+          "contentPathLocalized": "/Volumes/Faero2TB/DocumentsEXT/Codesmith/projects/OSP/d3reacts-docs/i18n/en/docusaurus-plugin-content-docs/current",
           "docs": [
             {
               "unversionedId": "Charts/area-chart",
@@ -45,7 +45,7 @@
               "unversionedId": "Charts/bar-chart",
               "id": "Charts/bar-chart",
               "title": "Bar Chart",
-              "description": "Props",
+              "description": "Bar chart example and sandbox here",
               "source": "@site/docs/Charts/bar-chart.mdx",
               "sourceDirName": "Charts",
               "slug": "/Charts/bar-chart",
@@ -60,15 +60,15 @@
                 "permalink": "/docs/Charts/area-chart"
               },
               "next": {
-                "title": "Area Chart",
+                "title": "Line Chart",
                 "permalink": "/docs/Charts/line-chart"
               }
             },
             {
               "unversionedId": "Charts/line-chart",
               "id": "Charts/line-chart",
-              "title": "Area Chart",
-              "description": "Area chart example and sandbox here",
+              "title": "Line Chart",
+              "description": "Line chart example and sandbox here",
               "source": "@site/docs/Charts/line-chart.mdx",
               "sourceDirName": "Charts",
               "slug": "/Charts/line-chart",
@@ -83,8 +83,27 @@
                 "permalink": "/docs/Charts/bar-chart"
               },
               "next": {
-                "title": "Legend",
-                "permalink": "/docs/Sub-Components/legend"
+                "title": "Scatter Plot",
+                "permalink": "/docs/Charts/scatter-plot"
+              }
+            },
+            {
+              "unversionedId": "Charts/scatter-plot",
+              "id": "Charts/scatter-plot",
+              "title": "Scatter Plot",
+              "description": "Scatter Plot example and sandbox here",
+              "source": "@site/docs/Charts/scatter-plot.mdx",
+              "sourceDirName": "Charts",
+              "slug": "/Charts/scatter-plot",
+              "permalink": "/docs/Charts/scatter-plot",
+              "editUrl": "https://github.com/oslabs-beta/d3reacts-website/docs/Charts/scatter-plot.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {},
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Line Chart",
+                "permalink": "/docs/Charts/line-chart"
               }
             },
             {
@@ -107,25 +126,6 @@
               "next": {
                 "title": "Area Chart",
                 "permalink": "/docs/Charts/area-chart"
-              }
-            },
-            {
-              "unversionedId": "Sub-Components/legend",
-              "id": "Sub-Components/legend",
-              "title": "Legend",
-              "description": "legend example and sandbox here",
-              "source": "@site/docs/Sub-Components/legend.mdx",
-              "sourceDirName": "Sub-Components",
-              "slug": "/Sub-Components/legend",
-              "permalink": "/docs/Sub-Components/legend",
-              "editUrl": "https://github.com/oslabs-beta/d3reacts-website/docs/Sub-Components/legend.mdx",
-              "tags": [],
-              "version": "current",
-              "frontMatter": {},
-              "sidebar": "tutorialSidebar",
-              "previous": {
-                "title": "Area Chart",
-                "permalink": "/docs/Charts/line-chart"
               }
             }
           ],
@@ -152,18 +152,10 @@
                   {
                     "type": "doc",
                     "id": "Charts/line-chart"
-                  }
-                ]
-              },
-              {
-                "type": "category",
-                "label": "Sub-Components",
-                "collapsible": true,
-                "collapsed": true,
-                "items": [
+                  },
                   {
                     "type": "doc",
-                    "id": "Sub-Components/legend"
+                    "id": "Charts/scatter-plot"
                   }
                 ]
               }

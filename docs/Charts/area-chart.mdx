@@ -79,9 +79,19 @@ __type:__ array[object]
 
 ### data
 
+The data must be structured as an array of objects, each object representing a point of data. Each data point consists of an X value, a Y value, and optionally a category to group by (in the case of a stacked area chart). 
+
 | Prop               | Type               | Optional  |
 | ------------------ | ------------------ | --------- | 
-| `data`             | `array of objects` | `false`   |
+| `data`             | array of objects | `false`   |
+
+* [{
+  x: `number` or `Date`,
+  y: `number`,
+  group: `string`
+}, ...]
+* *The X value can be of type `number` or `Date`, or a valud string representation of a Date.* 
+* *The Y value can be of type `number` or `null`.*
 
 ### xKey
 
@@ -103,57 +113,46 @@ This string is used as the accessor for the Y values of your data. **This should
 
 ### xDataType *(optional)*
 
-By default, D3Reacts will attempt to infer whether the data accessed by `xKey` is a valid date. *(If it is, it will use D3's scaleTime method to create the X axis rather than scaleLinear. This helps create more readable X axis ticks.)*
-By passing in a value to xDataType, you can manually set how you want D3Reacts to interperet your data.
+By default, d3reactor will attempt to infer whether the data accessed by `xKey` is a valid date. *(If it is, it will transform the Date into a string to create more readable X axis ticks.)*
+By passing in a value to xDataType, you can manually set how you want d3reactor to interperet your data.
 
 | Prop               | Type                            | Optional  | Default |
 | ------------------ | ------------------              | --------- | ------- |
-| `xDataType`        | `"number" | "date" | undefined` | `true`    | `undefined` | 
+| `xDataType`        | `"number"`, `"date"`, `undefined` | `true`    | `undefined` | 
 
+* *The X value can be of type `number` or `Date`, or a valud string representation of a Date.* 
 
 ### groupBy *(optional)*
 
-To create a multi-area chart, pass in a string to groupBy. **This string should match the property name from your data that represents the distinct groups you want to show.** For example, in the above dataset our groups are stored in the property name 'fruit'.
+To create a stacked area chart, pass in a string to groupBy. **This string should match the property name from your data that represents the distinct groups you want to show.** For example, in the above dataset our groups are stored in the property name 'fruit'.
 
 | Prop               | Type      | Optional  | Default     | Requirements |
 | ------------------ | ----------| --------- | -------     |------------- |
 | `groupBy`          | `string`  | `true`    | `undefined` | `A key corresponding to the properties in array of data objects used to denote groups.`  |
 
+* *__Caution__: If your dataset is skinny – that is, if the data pointed to by your yKey property represents multiple groups – then you **must** provide a groupBy property. Otherwise, d3reactor doesn't know how to interperet the data and you'll end up with some pretty weird results.*
+
 
 ### xAxis *(optional)*
+
+Renders an X axis above or below the chart, including ticks 
 
 | Prop               | Type                         | Optional  | Default |
 | ------------------ | --------                     | --------- | ------- |
 | `xAxis`            | `"top"`, `"bottom"`, `false` | `true`    | `'bottom'` |
 
-*If left undefined, the X axis will by default be rendered at the bottom.*
+* *If left undefined, the X axis will by default be rendered at the bottom.*
 
 
 ### yAxis *(optional)*
+
+Renders a Y axis to the left or right of the chart, including ticks 
 
 | Prop               | Type                         | Optional  | Default |
 | ------------------ | --------                     | --------- | ------- |
 | `yAxis`            | `"left"`, `"right"`, `false` | `true`    | `'bottom'` |
 
-*If left undefined, the Y axis will by default be rendered on the left.*
-
-
-### xGrid *(optional)*
-
-Displays horizontal grid lines on chart.
-
-| Prop               | Type      | Optional  | Default |
-| ------------------ | --------  | --------- | ------- |
-| `xGrid`            | `boolean` | `true`    | `false` |
-
-
-### yGrid *(optional)*
-
-Displays vertical grid lines on chart.
-
-| Prop               | Type      | Optional  | Default |
-| ------------------ | --------  | --------- | ------- |
-| `yGrid`            | `boolean` | `true`    | `false` |
+* *If left undefined, the Y axis will by default be rendered on the left.*
 
 
 ### xAxisLabel *(optional)*
@@ -174,15 +173,34 @@ Adds a label to your Y axis.
 | `yAxisLabel`       | `string`  | `true`    |
 
 
+### xGrid *(optional)*
+
+Displays horizontal grid lines on chart.
+
+| Prop               | Type      | Optional  | Default |
+| ------------------ | --------  | --------- | ------- |
+| `xGrid`            | `boolean` | `true`    | `false` |
+
+
+### yGrid *(optional)*
+
+Displays vertical grid lines on chart.
+
+| Prop               | Type      | Optional  | Default |
+| ------------------ | --------  | --------- | ------- |
+| `yGrid`            | `boolean` | `true`    | `false` |
+
+
 ### legend *(optional)*
-Each chart has the option to include a legend which shows what category from your data each color represents. The legend and chart are both responsive, so they will resize to make space for each other.
+Each chart has the option to include a legend which shows what category from your data that each color represents. The legend and chart are both responsive, so they will resize to make space for each other.
 The categories reflect the list of unique values stored at the property in your dataset accessed by `groupBy`.
 
 | Prop     | Type               | Optional | Default |
 | -------- | ------------------ | -------- | ------- |
 | `legend` | `boolean` or `"top"`, `"bottom"`, `"left"`, `"right"` , `"top-left"`, `"top-right"`, `"bottom-left"`, `"bottom-right"`, `"left-bottom"`, `"right-bottom"`, `"left-top"`, `"right-top"` | `true`   | `false`  |
 
-*If `true`, the legend will default to position `right`.*
+* *If `true`, the legend will default to position `'right'`.*
+* *__What's the difference between top-right and right-top?__ Good question! top-right renders in the top right corner of the component, to the right of the chart. right-top renders in the top right corner of the component, above the chart.*
 
 
 ### legendLabel *(optional)*
@@ -194,36 +212,34 @@ This is the title at the top of the legend.
 | ------- | -------------- | -------- | ------- |
 | `legendLabel` | `string` | `true`   | `''`    |
 
-*You must specify a `legend` property if you wish to use `legendLabel`*
+* *You must specify a `legend` property if you wish to use `legendLabel`*
 
 
-### height
+### height *(optional)*
 
-Sets the overall height of the chart, in pixels or percentage.
+Sets the overall height of the chart, in pixels or percentage. For example, `340`, `'340px'` or `'85%'`.
 
 | Prop               | Type               | Optional  | Default |
 | ------------------ | ------------------ | --------- | ------- |
 | `height`           | `string or number` | `true`    | `100%`  |
 
 
-### width
+### width *(optional)*
 
-Sets the overall width of the chart, in pixels or percentage.
-
-| Prop               | Type               | Optional  | Default |
-| ------------------ | ------------------ | --------- | ------- |
-| `width`           | `string or number` | `true`    | `100%`  |
-
-
-### colorScheme
-
-Sets the color scheme of the chart body. Accepts an array of strings, each representing a color *(e.g. 'red', 'rgb(63,63,63)', '#9dc8e2', etc.)*. The order of colors should match the order of unique groups accessed by groupBy in your dataset.
+Sets the overall width of the chart, in pixels or percentage. For example, `340`, `'340px'` or `'85%'`.
 
 | Prop               | Type               | Optional  | Default |
 | ------------------ | ------------------ | --------- | ------- |
-| `colorScheme`      | `array of strings` | `true`    | 8 colors between "#9dc8e2" and "#07316b"  |
+| `width`            | `string or number` | `true`    | `100%`  |
 
-*If the number of unique groups exceeds the number of colors in the array, the colors will loop, repeating in order until all groups are colored.*
+
+### colorScheme *(optional)*
+
+Sets the color scheme of the chart body. 
+
+| Prop               | Type               | Optional  | Default |
+| ------------------ | ------------------ | --------- | ------- |
+| `colorScheme`      | `'schemeRdYlGn',` `'schemeRdYlBu',` `'schemeRdGy',` `'schemeRdBu',` `'schemePuOr',` `'schemePiYG',` `'schemePRGn',` `'schemeBrBG',` `'schemeReds',` `'schemePurples',` `'schemeOranges',` `'schemeGreys',` `'schemeGreens',` `'schemeBlues',` `'schemeSpectral'` | `true`    | `'schemePurples'` |
 
 
 

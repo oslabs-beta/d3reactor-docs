@@ -1,0 +1,23 @@
+{
+  "unversionedId": "Charts/line-chart copy",
+  "id": "Charts/line-chart copy",
+  "title": "Line Chart",
+  "description": "Line chart example and sandbox here",
+  "source": "@site/docs/Charts/line-chart copy.mdx",
+  "sourceDirName": "Charts",
+  "slug": "/Charts/line-chart copy",
+  "permalink": "/docs/Charts/line-chart copy",
+  "editUrl": "https://github.com/oslabs-beta/d3reacts-website/docs/Charts/line-chart copy.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Bar Chart",
+    "permalink": "/docs/Charts/bar-chart"
+  },
+  "next": {
+    "title": "Line Chart",
+    "permalink": "/docs/Charts/line-chart"
+  }
+}
