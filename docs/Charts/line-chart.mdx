@@ -1,6 +1,6 @@
-# Area Chart
+# Line Chart
 
-## Area chart example and sandbox here
+## Line chart example and sandbox here
 
 ```jsx live
 function Clock(props) {
@@ -79,7 +79,7 @@ __type:__ array[object]
 
 ### data
 
-The data must be structured as an array of objects, each object representing a point of data. Each data point consists of an X value, a Y value, and optionally a category to group by (in the case of a stacked area chart). 
+The data must be structured as an array of objects, each object representing a point of data. Each data point consists of an X value, a Y value, and optionally a category to group by (in the case of a multi-line chart). 
 
 | Prop               | Type               | Optional  |
 | ------------------ | ------------------ | --------- | 
@@ -124,7 +124,7 @@ By passing in a value to xDataType, you can manually set how you want d3reactor 
 
 ### groupBy *(optional)*
 
-To create a stacked area chart, pass in a string to groupBy. **This string should match the property name from your data that represents the distinct groups you want to show.** For example, in the above dataset our groups are stored in the property name 'fruit'.
+To create a multi-line chart, pass in a string to groupBy. **This string should match the property name from your data that represents the distinct groups you want to show.** For example, in the above dataset our groups are stored in the property name 'fruit'.
 
 | Prop               | Type      | Optional  | Default     | Requirements |
 | ------------------ | ----------| --------- | -------     |------------- |

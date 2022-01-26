@@ -21,6 +21,16 @@
               "sidebar": "tutorialSidebar"
             },
             {
+              "id": "Charts/line-chart",
+              "path": "/docs/Charts/line-chart",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Charts/scatter-plot",
+              "path": "/docs/Charts/scatter-plot",
+              "sidebar": "tutorialSidebar"
+            },
+            {
               "id": "intro",
               "path": "/docs/intro",
               "sidebar": "tutorialSidebar"

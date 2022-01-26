@@ -31,6 +31,18 @@
             "label": "Bar Chart",
             "href": "/docs/Charts/bar-chart",
             "docId": "Charts/bar-chart"
+          },
+          {
+            "type": "link",
+            "label": "Line Chart",
+            "href": "/docs/Charts/line-chart",
+            "docId": "Charts/line-chart"
+          },
+          {
+            "type": "link",
+            "label": "Scatter Plot",
+            "href": "/docs/Charts/scatter-plot",
+            "docId": "Charts/scatter-plot"
           }
         ]
       }
@@ -46,7 +58,19 @@
     "Charts/bar-chart": {
       "id": "Charts/bar-chart",
       "title": "Bar Chart",
-      "description": "Props",
+      "description": "Bar chart example and sandbox here",
+      "sidebar": "tutorialSidebar"
+    },
+    "Charts/line-chart": {
+      "id": "Charts/line-chart",
+      "title": "Line Chart",
+      "description": "Line chart example and sandbox here",
+      "sidebar": "tutorialSidebar"
+    },
+    "Charts/scatter-plot": {
+      "id": "Charts/scatter-plot",
+      "title": "Scatter Plot",
+      "description": "Scatter Plot example and sandbox here",
       "sidebar": "tutorialSidebar"
     },
     "intro": {
