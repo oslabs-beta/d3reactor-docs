@@ -1,0 +1,157 @@
+# Pie Chart
+
+## Pie chart example and sandbox here
+
+```jsx live
+function Clock(props) {
+  const [date, setDate] = useState(new Date());
+  useEffect(() => {
+    var timerID = setInterval(() => tick(), 1000);
+
+    return function cleanup() {
+      clearInterval(timerID);
+    };
+  });
+
+  function tick() {
+    setDate(new Date());
+  }
+
+  return (
+    <div>
+      <h2>It is {date.toLocaleTimeString()}.</h2>
+    </div>
+  );
+}
+```
+
+## Data
+
+__type:__ array[object]
+
+### Pie example
+```shell
+### Data Format Example Single
+[
+  {
+    label: "vanilla",
+    value: 35,
+  },
+  {
+    label: "chocolate",
+    value: 40,
+  },
+  {
+    label: "peanut butter",
+    value: 25,
+ },
+]
+```
+## Props
+
+### data
+
+The data must be structured as an array of objects, each object representing a point of data. 
+
+| Prop               | Type               | Optional  |
+| ------------------ | ------------------ | --------- | 
+| `data`             | array of objects   | `false`   |
+
+* [{
+  label: `number` or `string`,
+  value: `number`,
+}, ...]
+* *The label can be of type `number` or `string`.* 
+* *The value can be of type `number`.*
+
+### label
+
+
+This string is used as an accessor for the different categories of your data.  d3reactor will look for this property in the data object. **This should match the property name of your data that holds the label for each dataset.** 
+
+| Prop               | Type               | Optional  | Requirements |
+| ------------------ | ------------------ | --------- | ------------ |
+| `label`            | `string`           | `false`   | `A key corresponding to the property used for accessing the label of each datum`  |
+
+### value
+
+This string is used as a value accessor for your data.  d3reactor will look for this property to access the value of each datum. ** This should match the property name of your data that holds the value of each datum. **
+
+| Prop               | Type               | Optional  | Requirements |
+| ------------------ | ------------------ | --------- | ------------ |
+| `value`             | `string`           | `false`   | `A key corresponding to the property used for accessing the value of each datum`  |
+
+
+### outerRadius *(optional)*
+
+Sets the radius of the pie, in pixels or percentage. For example, `340` or `'85%'`.
+
+| Prop               | Type               | Optional  | Default |
+| ------------------ | ------------------ | --------- | ------- |
+| `outerRadius`      | `string` or `number` | `true`    | `100%`  |
+
+### innerRadius  *(optional)*
+
+Sets the inner radius of the pie, in pixels or percentage. If you would like to make a doughnut chart, you need to set the inner radius to the desired value. For example, `20` or `50%'`. 
+
+| Prop               | Type               | Optional  | Default |
+| ------------------ | ------------------ | --------- | ------- |
+| `innerRadius`      | `string or number` | `true`    | `0%`  |
+
+### pieLabel *(optional)*
+
+Displays the value of each label in each slice of your chart.
+
+| Prop               | Type      | Optional  |
+| ------------------ | --------  | --------- |
+| `pieLabel`         | `string`  | `true`    |
+
+### legend *(optional)*
+Each chart has the option to include a legend which shows the categories and corresponding colors of your data. The legend and chart are both responsive, so they will resize to make space for each other.
+The categories reflect the list of unique values stored at the property in your dataset accessed by `groupBy`.
+
+| Prop     | Type               | Optional | Default |
+| -------- | ------------------ | -------- | ------- |
+| `legend` | `boolean` or `"top"`, `"bottom"`, `"left"`, `"right"` , `"top-left"`, `"top-right"`, `"bottom-left"`, `"bottom-right"`, `"left-bottom"`, `"right-bottom"`, `"left-top"`, `"right-top"` | `true`   | `false`  |
+
+* *If `true`, the legend will default to position `'right'`.*
+* *__What's the difference between top-right and right-top?__ Good question! top-right renders in the top right corner of the component, to the right of the chart. right-top renders in the top right corner of the component, above the chart.*
+
+
+### legendLabel *(optional)*
+
+This is the title at the top of the legend. 
+*If the value is an empty string (`''`), the legend label will not render.*
+
+| Prop    | Type           | Optional | Default |
+| ------- | -------------- | -------- | ------- |
+| `legendLabel` | `string` | `true`   | `''`    |
+
+* *You must specify a `legend` property if you wish to use `legendLabel`*
+
+
+### colorScheme *(optional)*
+
+Sets the color scheme of the chart body. 
+
+| Prop               | Type               | Optional  | Default |
+| ------------------ | ------------------ | --------- | ------- |
+| `colorScheme`      | `'schemeRdYlGn',` `'schemeRdYlBu',` `'schemeRdGy',` `'schemeRdBu',` `'schemePuOr',` `'schemePiYG',` `'schemePRGn',` `'schemeBrBG',` `'schemeReds',` `'schemePurples',` `'schemeOranges',` `'schemeGreys',` `'schemeGreens',` `'schemeBlues',` `'schemeSpectral'` | `true`    | `'schemePurples'` |
+
+
+
+<details>
+  <summary>Color schemes</summary>
+  <div>
+    <div>This is the detailed content</div>
+    <br/>
+    <details>
+      <summary>
+        Nested toggle! Some surprise inside...
+      </summary>
+      <div>
+        😲😲😲😲😲
+      </div>
+    </details>
+  </div>
+</details>

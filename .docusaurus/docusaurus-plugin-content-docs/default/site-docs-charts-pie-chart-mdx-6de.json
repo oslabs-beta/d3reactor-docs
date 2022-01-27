@@ -1,0 +1,23 @@
+{
+  "unversionedId": "Charts/pie-chart",
+  "id": "Charts/pie-chart",
+  "title": "Pie Chart",
+  "description": "Pie chart example and sandbox here",
+  "source": "@site/docs/Charts/pie-chart.mdx",
+  "sourceDirName": "Charts",
+  "slug": "/Charts/pie-chart",
+  "permalink": "/docs/Charts/pie-chart",
+  "editUrl": "https://github.com/oslabs-beta/d3reacts-website/docs/Charts/pie-chart.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Line Chart",
+    "permalink": "/docs/Charts/line-chart"
+  },
+  "next": {
+    "title": "Scatter Plot",
+    "permalink": "/docs/Charts/scatter-plot"
+  }
+}
