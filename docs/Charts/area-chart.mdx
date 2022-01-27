@@ -124,7 +124,7 @@ By passing in a value to xDataType, you can manually set how you want d3reactor 
 
 ### groupBy *(optional)*
 
-To create a stacked area chart, you need to use the `groupBy` prop by passing a string into this prop. **This string should match the property name of your data that represents the distinct groups you want to show.** For example, in the above multi example dataset, our dataset is grouped by the property name 'fruit'.
+To create a stacked area chart, pass in a string to the `groupBy` prop. **This string should match the property name of your data that represents the distinct groups you want to show.** For example, in the above multi example dataset, our dataset is grouped by the property name 'fruit'.
 
 | Prop               | Type      | Optional  | Default     | Requirements |
 | ------------------ | ----------| --------- | -------     |------------- |
@@ -192,7 +192,7 @@ Displays vertical grid lines on chart.
 
 
 ### legend *(optional)*
-Each chart has the option to include a legend which shows the categories and colors of each series of data. The legend and chart are both responsive, so they will resize to make space for each other.
+Each chart has the option to include a legend which shows the categories and corresponding colors of your data. The legend and chart are both responsive, so they will resize to make space for each other.
 The categories reflect the list of unique values stored at the property in your dataset accessed by `groupBy`.
 
 | Prop     | Type               | Optional | Default |

@@ -67,7 +67,7 @@ The data must be structured as an array of objects, each object representing a p
 ### label
 
 
-This string is used as a label accessor for your data.  d3reactor will look for this property in the data object. **This should match the property name of your data that holds the label for each dataset.** 
+This string is used as an accessor for the different categories of your data.  d3reactor will look for this property in the data object. **This should match the property name of your data that holds the label for each dataset.** 
 
 | Prop               | Type               | Optional  | Requirements |
 | ------------------ | ------------------ | --------- | ------------ |
@@ -88,7 +88,7 @@ Sets the radius of the pie, in pixels or percentage. For example, `340` or `'85%
 
 | Prop               | Type               | Optional  | Default |
 | ------------------ | ------------------ | --------- | ------- |
-| `outerRadius`      | `string or number` | `true`    | `100%`  |
+| `outerRadius`      | `string` or `number` | `true`    | `100%`  |
 
 ### innerRadius  *(optional)*
 
@@ -100,14 +100,14 @@ Sets the inner radius of the pie, in pixels or percentage. If you would like to 
 
 ### pieLabel *(optional)*
 
-Adds a label to your chart.
+Displays the value of each label in each slice of your chart.
 
 | Prop               | Type      | Optional  |
 | ------------------ | --------  | --------- |
 | `pieLabel`         | `string`  | `true`    |
 
 ### legend *(optional)*
-Each chart has the option to include a legend which shows what category from your data that each color represents. The legend and chart are both responsive, so they will resize to make space for each other.
+Each chart has the option to include a legend which shows the categories and corresponding colors of your data. The legend and chart are both responsive, so they will resize to make space for each other.
 The categories reflect the list of unique values stored at the property in your dataset accessed by `groupBy`.
 
 | Prop     | Type               | Optional | Default |

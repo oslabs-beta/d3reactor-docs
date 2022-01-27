@@ -16,7 +16,7 @@ export default {
       "classic",
       {
         "docs": {
-          "sidebarPath": "/Users/eceozalp/Code/PTRI /OSP/d3reacts-docs/sidebars.js",
+          "sidebarPath": "/Volumes/Faero2TB/DocumentsEXT/Codesmith/projects/OSP/d3reacts-docs/sidebars.js",
           "editUrl": "https://github.com/oslabs-beta/d3reacts-website"
         },
         "blog": {
@@ -24,7 +24,7 @@ export default {
           "editUrl": "https://github.com/oslabs-beta/d3reacts-website/"
         },
         "theme": {
-          "customCss": "/Users/eceozalp/Code/PTRI /OSP/d3reacts-docs/src/css/custom.css",
+          "customCss": "/Volumes/Faero2TB/DocumentsEXT/Codesmith/projects/OSP/d3reacts-docs/src/css/custom.css",
           "themes": [
             "@docusaurus/theme-live-codeblock"
           ]
