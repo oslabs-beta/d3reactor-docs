@@ -88,7 +88,7 @@
     "intro": {
       "id": "intro",
       "title": "Installation",
-      "description": "Let's get your first D3 reacts chart set up in less < 5 minutes.",
+      "description": "Let's get your first d3reactor chart set up in less < 5 minutes.",
       "sidebar": "tutorialSidebar"
     }
   }

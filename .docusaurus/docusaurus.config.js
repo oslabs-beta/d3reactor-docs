@@ -2,29 +2,29 @@ export default {
   "plugins": [
     "@docusaurus/theme-live-codeblock"
   ],
-  "title": "D3 Reacts",
+  "title": "d3reactor",
   "tagline": "Create Performant React Visualizations with speed",
-  "url": "https://d3reacts.com",
+  "url": "https://d3reactor.com",
   "baseUrl": "/",
   "onBrokenLinks": "throw",
   "onBrokenMarkdownLinks": "warn",
   "favicon": "img/favicon.ico",
-  "organizationName": "D3Reacts",
-  "projectName": "D3Reacts",
+  "organizationName": "d3reactor",
+  "projectName": "d3reactor",
   "presets": [
     [
       "classic",
       {
         "docs": {
-          "sidebarPath": "/Volumes/Faero2TB/DocumentsEXT/Codesmith/projects/OSP/d3reacts-docs/sidebars.js",
-          "editUrl": "https://github.com/oslabs-beta/d3reacts-website"
+          "sidebarPath": "/Users/travislockett/Codesmith/OSP/d3reactor-docs/sidebars.js",
+          "editUrl": "https://github.com/oslabs-beta/d3reactor-docs"
         },
         "blog": {
           "showReadingTime": true,
-          "editUrl": "https://github.com/oslabs-beta/d3reacts-website/"
+          "editUrl": "https://github.com/oslabs-beta/d3reactor-docs"
         },
         "theme": {
-          "customCss": "/Volumes/Faero2TB/DocumentsEXT/Codesmith/projects/OSP/d3reacts-docs/src/css/custom.css",
+          "customCss": "/Users/travislockett/Codesmith/OSP/d3reactor-docs/src/css/custom.css",
           "themes": [
             "@docusaurus/theme-live-codeblock"
           ]
@@ -36,8 +36,8 @@ export default {
     "navbar": {
       "title": "",
       "logo": {
-        "href": "https://d3reacts-website.vercel.app/",
-        "alt": "D3 Reacts Logo",
+        "href": "https://d3reactor.com/",
+        "alt": "d3reactor Logo",
         "src": "img/logo.svg"
       },
       "items": [
@@ -48,7 +48,7 @@ export default {
           "label": "Docs"
         },
         {
-          "href": "https://github.com/oslabs-beta/d3reacts-website",
+          "href": "https://github.com/oslabs-beta/d3reactor-docs",
           "label": "GitHub",
           "position": "right"
         },
@@ -79,12 +79,12 @@ export default {
           "items": [
             {
               "label": "GitHub",
-              "href": "https://github.com/oslabs-beta/d3reacts-website"
+              "href": "https://github.com/oslabs-beta/d3reactor-docs"
             }
           ]
         }
       ],
-      "copyright": "D3Reacts is an open-source project licensed under MIT 2022"
+      "copyright": "d3reactor is an open-source project licensed under MIT 2022"
     },
     "liveCodeBlock": {
       "playgroundPosition": "bottom"

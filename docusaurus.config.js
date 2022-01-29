@@ -7,15 +7,15 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
 	plugins: ["@docusaurus/theme-live-codeblock"],
-	title: "D3 Reacts",
+	title: "d3reactor",
 	tagline: "Create Performant React Visualizations with speed",
-	url: "https://d3reacts.com",
+	url: "https://d3reactor.com",
 	baseUrl: "/",
 	onBrokenLinks: "throw",
 	onBrokenMarkdownLinks: "warn",
 	favicon: "img/favicon.ico",
-	organizationName: "D3Reacts", // Usually your GitHub org/user name.
-	projectName: "D3Reacts", // Usually your repo name.
+	organizationName: "d3reactor", // Usually your GitHub org/user name.
+	projectName: "d3reactor", // Usually your repo name.
 	presets: [
 		[
 			"classic",
@@ -24,12 +24,12 @@ const config = {
 				docs: {
 					sidebarPath: require.resolve("./sidebars.js"),
 					// Please change this to your repo.
-					editUrl: "https://github.com/oslabs-beta/d3reacts-website",
+					editUrl: "https://github.com/oslabs-beta/d3reactor-docs",
 				},
 				blog: {
 					showReadingTime: true,
 					// Please change this to your repo.
-					editUrl: "https://github.com/oslabs-beta/d3reacts-website/",
+					editUrl: "https://github.com/oslabs-beta/d3reactor-docs",
 				},
 				theme: {
 					customCss: require.resolve("./src/css/custom.css"),
@@ -45,8 +45,8 @@ const config = {
 			navbar: {
 				title: "",
 				logo: {
-					href: "https://d3reacts-website.vercel.app/",
-					alt: "D3 Reacts Logo",
+					href: "https://d3reactor.com/",
+					alt: "d3reactor Logo",
 					src: "img/logo.svg",
 				},
 				items: [
@@ -57,7 +57,7 @@ const config = {
 						label: "Docs",
 					},
 					{
-						href: "https://github.com/oslabs-beta/d3reacts-website",
+						href: "https://github.com/oslabs-beta/d3reactor-docs",
 						label: "GitHub",
 						position: "right",
 					},
@@ -83,22 +83,21 @@ const config = {
 					{
 						title: "More",
 						items: [
-				
 							{
 								label: "GitHub",
-								href: "https://github.com/oslabs-beta/d3reacts-website",
+								href: "https://github.com/oslabs-beta/d3reactor-docs",
 							},
 						],
 					},
 				],
-				copyright: `D3Reacts is an open-source project licensed under MIT ${new Date().getFullYear()}`,
+				copyright: `d3reactor is an open-source project licensed under MIT ${new Date().getFullYear()}`,
 			},
 			liveCodeBlock: {
 				/**
 				 * The position of the live playground, above or under the editor
 				 * Possible values: "top" | "bottom"
 				 */
-				playgroundPosition: 'bottom',
+				playgroundPosition: "bottom",
 			},
 			prism: {
 				theme: lightCodeTheme,
