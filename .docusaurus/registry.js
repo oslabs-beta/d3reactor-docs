@@ -6,6 +6,7 @@ export default {
   '1df93b7f': [() => import(/* webpackChunkName: '1df93b7f' */ "@site/src/pages/index.tsx"), "@site/src/pages/index.tsx", require.resolveWeak("@site/src/pages/index.tsx")],
   '52ef3d27': [() => import(/* webpackChunkName: '52ef3d27' */ "@site/docs/Charts/area-chart.mdx"), "@site/docs/Charts/area-chart.mdx", require.resolveWeak("@site/docs/Charts/area-chart.mdx")],
   '5e9f5e1a': [() => import(/* webpackChunkName: '5e9f5e1a' */ "@generated/docusaurus.config"), "@generated/docusaurus.config", require.resolveWeak("@generated/docusaurus.config")],
+  '6de880f5': [() => import(/* webpackChunkName: '6de880f5' */ "@site/docs/Charts/pie-chart.mdx"), "@site/docs/Charts/pie-chart.mdx", require.resolveWeak("@site/docs/Charts/pie-chart.mdx")],
   '935f2afb': [() => import(/* webpackChunkName: '935f2afb' */ "~docs/default/version-current-metadata-prop-751.json"), "~docs/default/version-current-metadata-prop-751.json", require.resolveWeak("~docs/default/version-current-metadata-prop-751.json")],
   '9e4087bc': [() => import(/* webpackChunkName: '9e4087bc' */ "@theme/BlogArchivePage"), "@theme/BlogArchivePage", require.resolveWeak("@theme/BlogArchivePage")],
   'b2f554cd': [() => import(/* webpackChunkName: 'b2f554cd' */ "~blog/default/blog-archive-80c.json"), "~blog/default/blog-archive-80c.json", require.resolveWeak("~blog/default/blog-archive-80c.json")],

@@ -90,12 +90,12 @@ The data must be structured as an array of objects, each object representing a p
   y: `number`,
   group: `string`
 }, ...]
-* *The X value can be of type `number` or `Date`, or a valud string representation of a Date.* 
+* *The X value can be of type `number` or `Date`, or a valid string representation of a Date.* 
 * *The Y value can be of type `number` or `null`.*
 
 ### xKey
 
-This string is used as the accessor for your data in the X domain. **This should match the property name from your data that you want to use for your X values.** For example, if we want to show the quantity of fruit over time using the above dataset, 'date' will be our xKey value.
+This string is used as the accessor for your data in the X domain. **This should match the property name of your data that you want to use for your X values.** For example, if we want to show the quantity of fruit over time using the above dataset, 'date' will be our xKey value.
 
 | Prop               | Type               | Optional  | Requirements |
 | ------------------ | ------------------ | --------- | ------------ |
@@ -104,7 +104,7 @@ This string is used as the accessor for your data in the X domain. **This should
 
 ### yKey
 
-This string is used as the accessor for the Y values of your data. **This should match the property name from your data that you want to use for your Y values.** For example, if we want to show the quantity of fruit using the above dataset, 'value' will be our yKey value.
+This string is used as the accessor for the Y values of your data. **This should match the property name of your data that you want to use for your Y values.** For example, if we want to show the quantity of fruit using the above dataset, 'value' will be our yKey value.
 
 | Prop               | Type               | Optional  | Requirements |
 | ------------------ | ------------------ | --------- | ------------ |
@@ -114,45 +114,45 @@ This string is used as the accessor for the Y values of your data. **This should
 ### xDataType *(optional)*
 
 By default, d3reactor will attempt to infer whether the data accessed by `xKey` is a valid date. *(If it is, it will transform the Date into a string to create more readable X axis ticks.)*
-By passing in a value to xDataType, you can manually set how you want d3reactor to interperet your data.
+By passing in a value to xDataType, you can manually set how you want d3reactor to interpret your data.
 
 | Prop               | Type                            | Optional  | Default |
 | ------------------ | ------------------              | --------- | ------- |
 | `xDataType`        | `"number"`, `"date"`, `undefined` | `true`    | `undefined` | 
 
-* *The X value can be of type `number` or `Date`, or a valud string representation of a Date.* 
+* *The X value can be of type `number` or `Date`, or a valid string representation of a Date.* 
 
 ### groupBy *(optional)*
 
-To create a stacked area chart, pass in a string to groupBy. **This string should match the property name from your data that represents the distinct groups you want to show.** For example, in the above dataset our groups are stored in the property name 'fruit'.
+To create a stacked area chart, pass in a string to the `groupBy` prop. **This string should match the property name of your data that represents the distinct groups you want to show.** For example, in the above multi example dataset, our dataset is grouped by the property name 'fruit'.
 
 | Prop               | Type      | Optional  | Default     | Requirements |
 | ------------------ | ----------| --------- | -------     |------------- |
 | `groupBy`          | `string`  | `true`    | `undefined` | `A key corresponding to the properties in array of data objects used to denote groups.`  |
 
-* *__Caution__: If your dataset is skinny – that is, if the data pointed to by your yKey property represents multiple groups – then you **must** provide a groupBy property. Otherwise, d3reactor doesn't know how to interperet the data and you'll end up with some pretty weird results.*
+* *__Caution__: If your dataset is skinny – that is, if the data pointed to by your yKey property represents multiple groups – then you **must** provide a groupBy property to get the desired results. Otherwise, d3reactor doesn't know how to interpret the data.*
 
 
 ### xAxis *(optional)*
 
-Renders an X axis above or below the chart, including ticks 
+Determines where to render the X axis (above or below the chart) including ticks. Passing a false will remove the X axis.
 
 | Prop               | Type                         | Optional  | Default |
 | ------------------ | --------                     | --------- | ------- |
 | `xAxis`            | `"top"`, `"bottom"`, `false` | `true`    | `'bottom'` |
 
-* *If left undefined, the X axis will by default be rendered at the bottom.*
+* *By default, the X axis will be rendered at the bottom.*
 
 
 ### yAxis *(optional)*
 
-Renders a Y axis to the left or right of the chart, including ticks 
+Determines where to render the Y axis (left or right of the chart) including ticks. Passing a false will remove the Y axis.
 
 | Prop               | Type                         | Optional  | Default |
 | ------------------ | --------                     | --------- | ------- |
 | `yAxis`            | `"left"`, `"right"`, `false` | `true`    | `'bottom'` |
 
-* *If left undefined, the Y axis will by default be rendered on the left.*
+* *By default, the Y axis will be rendered on the left.*
 
 
 ### xAxisLabel *(optional)*
@@ -168,9 +168,9 @@ Adds a label to your X axis.
 
 Adds a label to your Y axis.
 
-| Prop               | Type      | Optional  |
+| Prop               | Type      | Optional  | 
 | ------------------ | --------  | --------- |
-| `yAxisLabel`       | `string`  | `true`    |
+| `yAxisLabel`       | `string`  | `true`    | 
 
 
 ### xGrid *(optional)*
@@ -192,7 +192,7 @@ Displays vertical grid lines on chart.
 
 
 ### legend *(optional)*
-Each chart has the option to include a legend which shows what category from your data that each color represents. The legend and chart are both responsive, so they will resize to make space for each other.
+Each chart has the option to include a legend which shows the categories and corresponding colors of your data. The legend and chart are both responsive, so they will resize to make space for each other.
 The categories reflect the list of unique values stored at the property in your dataset accessed by `groupBy`.
 
 | Prop     | Type               | Optional | Default |

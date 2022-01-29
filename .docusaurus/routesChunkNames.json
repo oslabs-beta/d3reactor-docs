@@ -3,7 +3,7 @@
     "component": "9e4087bc",
     "archive": "b2f554cd"
   },
-  "/docs-dc3": {
+  "/docs-9f2": {
     "component": "1be78505",
     "versionMetadata": "935f2afb"
   },
@@ -18,6 +18,10 @@
   "/docs/Charts/line-chart-2cd": {
     "component": "17896441",
     "content": "d47757f6"
+  },
+  "/docs/Charts/pie-chart-515": {
+    "component": "17896441",
+    "content": "6de880f5"
   },
   "/docs/Charts/scatter-plot-d2c": {
     "component": "17896441",

@@ -26,6 +26,11 @@
               "sidebar": "tutorialSidebar"
             },
             {
+              "id": "Charts/pie-chart",
+              "path": "/docs/Charts/pie-chart",
+              "sidebar": "tutorialSidebar"
+            },
+            {
               "id": "Charts/scatter-plot",
               "path": "/docs/Charts/scatter-plot",
               "sidebar": "tutorialSidebar"

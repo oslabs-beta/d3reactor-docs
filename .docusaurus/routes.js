@@ -10,7 +10,7 @@ export default [
   },
   {
     path: '/docs',
-    component: ComponentCreator('/docs','dc3'),
+    component: ComponentCreator('/docs','9f2'),
     routes: [
       {
         path: '/docs/Charts/area-chart',
@@ -27,6 +27,12 @@ export default [
       {
         path: '/docs/Charts/line-chart',
         component: ComponentCreator('/docs/Charts/line-chart','2cd'),
+        exact: true,
+        'sidebar': "tutorialSidebar"
+      },
+      {
+        path: '/docs/Charts/pie-chart',
+        component: ComponentCreator('/docs/Charts/pie-chart','515'),
         exact: true,
         'sidebar': "tutorialSidebar"
       },
