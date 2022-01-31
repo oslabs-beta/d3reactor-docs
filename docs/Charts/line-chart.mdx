@@ -2,28 +2,12 @@
 
 ## Line chart example and sandbox here
 
-```jsx live
-function Clock(props) {
-  const [date, setDate] = useState(new Date());
-  useEffect(() => {
-    var timerID = setInterval(() => tick(), 1000);
-
-    return function cleanup() {
-      clearInterval(timerID);
-    };
-  });
-
-  function tick() {
-    setDate(new Date());
-  }
-
-  return (
-    <div>
-      <h2>It is {date.toLocaleTimeString()}.</h2>
-    </div>
-  );
-}
-```
+<iframe src="https://codesandbox.io/embed/line-chart-rl1q0?fontsize=14&hidenavigation=1&theme=dark"
+  style={{width:'100%', height:'500px', border:'0', borderRadius: '4px', overflow:'hidden'}}
+  title="line-chart"
+  allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+  sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+></iframe>
 
 ## Data
 
