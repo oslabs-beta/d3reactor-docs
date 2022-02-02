@@ -7,7 +7,7 @@
   "sourceDirName": ".",
   "slug": "/intro",
   "permalink": "/docs/intro",
-  "editUrl": "https://github.com/oslabs-beta/d3reactor-docs/docs/intro.md",
+  "editUrl": "https://github.com/oslabs-beta/d3reactor-docs/tree/dev/docs/intro.md",
   "tags": [],
   "version": "current",
   "sidebarPosition": 1,

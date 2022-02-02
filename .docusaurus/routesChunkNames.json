@@ -1,38 +1,60 @@
 {
+  "/__docusaurus/debug-3d6": {
+    "component": "component---theme-debug-config-23-a-2ff"
+  },
+  "/__docusaurus/debug/config-914": {
+    "component": "component---theme-debug-config-23-a-2ff"
+  },
+  "/__docusaurus/debug/content-c28": {
+    "component": "component---theme-debug-contentba-8-ce7",
+    "allContent": "allContent---docusaurus-debug-content-246-9aa"
+  },
+  "/__docusaurus/debug/globalData-3cf": {
+    "component": "component---theme-debug-global-dataede-0fa"
+  },
+  "/__docusaurus/debug/metadata-31b": {
+    "component": "component---theme-debug-site-metadata-68-e-3d4"
+  },
+  "/__docusaurus/debug/registry-0da": {
+    "component": "component---theme-debug-registry-679-501"
+  },
+  "/__docusaurus/debug/routes-244": {
+    "component": "component---theme-debug-routes-946-699"
+  },
   "/blog/archive-f4c": {
-    "component": "9e4087bc",
-    "archive": "b2f554cd"
+    "component": "component---theme-blog-archive-page-9-e-4-1d8",
+    "archive": "archive---blog-archiveb-2-f-393"
   },
   "/docs-9f2": {
-    "component": "1be78505",
-    "versionMetadata": "935f2afb"
+    "component": "component---theme-doc-page-1-be-9be",
+    "versionMetadata": "versionMetadata---docs-935-398"
   },
   "/docs/Charts/area-chart-872": {
-    "component": "17896441",
-    "content": "52ef3d27"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-charts-area-chart-52-e-590"
   },
   "/docs/Charts/bar-chart-e80": {
-    "component": "17896441",
-    "content": "0742c27a"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-charts-bar-chart-074-979"
   },
   "/docs/Charts/line-chart-2cd": {
-    "component": "17896441",
-    "content": "d47757f6"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-charts-line-chartd-47-51e"
   },
   "/docs/Charts/pie-chart-515": {
-    "component": "17896441",
-    "content": "6de880f5"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-charts-pie-chart-6-de-cf1"
   },
   "/docs/Charts/scatter-plot-d2c": {
-    "component": "17896441",
-    "content": "dfe6bb33"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-charts-scatter-plotdfe-7c5"
   },
   "/docs/intro-aed": {
-    "component": "17896441",
-    "content": "0e384e19"
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-intro-0-e-3-be1"
   },
   "/-f49": {
-    "component": "1df93b7f",
-    "config": "5e9f5e1a"
+    "component": "component---site-src-pages-index-tsx-1-df-d3e",
+    "config": "config---5-e-9-4f3"
   }
 }
