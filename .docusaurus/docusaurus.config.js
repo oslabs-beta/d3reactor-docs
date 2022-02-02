@@ -8,7 +8,7 @@ export default {
   "baseUrl": "/",
   "onBrokenLinks": "throw",
   "onBrokenMarkdownLinks": "warn",
-  "favicon": "img/favicon.ico",
+  "favicon": "img/logo.svg",
   "organizationName": "d3reactor",
   "projectName": "d3reactor",
   "presets": [
@@ -17,7 +17,7 @@ export default {
       {
         "docs": {
           "sidebarPath": "/Users/travislockett/Codesmith/OSP/d3reactor-docs/sidebars.js",
-          "editUrl": "https://github.com/oslabs-beta/d3reactor-docs"
+          "editUrl": "https://github.com/oslabs-beta/d3reactor-docs/tree/dev"
         },
         "blog": {
           "showReadingTime": true,

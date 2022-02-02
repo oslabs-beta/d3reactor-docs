@@ -13,7 +13,7 @@ const config = {
 	baseUrl: "/",
 	onBrokenLinks: "throw",
 	onBrokenMarkdownLinks: "warn",
-	favicon: "img/favicon.ico",
+	favicon: "img/logo.svg",
 	organizationName: "d3reactor", // Usually your GitHub org/user name.
 	projectName: "d3reactor", // Usually your repo name.
 	presets: [
@@ -24,7 +24,8 @@ const config = {
 				docs: {
 					sidebarPath: require.resolve("./sidebars.js"),
 					// Please change this to your repo.
-					editUrl: "https://github.com/oslabs-beta/d3reactor-docs",
+					editUrl:
+						"https://github.com/oslabs-beta/d3reactor-docs/tree/dev",
 				},
 				blog: {
 					showReadingTime: true,
