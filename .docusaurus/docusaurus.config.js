@@ -8,7 +8,7 @@ export default {
   "baseUrl": "/",
   "onBrokenLinks": "throw",
   "onBrokenMarkdownLinks": "warn",
-  "favicon": "img/favicon.ico",
+  "favicon": "img/logo.svg",
   "organizationName": "d3reactor",
   "projectName": "d3reactor",
   "presets": [

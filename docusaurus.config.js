@@ -13,7 +13,7 @@ const config = {
 	baseUrl: "/",
 	onBrokenLinks: "throw",
 	onBrokenMarkdownLinks: "warn",
-	favicon: "img/favicon.ico",
+	favicon: "img/logo.svg",
 	organizationName: "d3reactor", // Usually your GitHub org/user name.
 	projectName: "d3reactor", // Usually your repo name.
 	presets: [
