@@ -74,7 +74,7 @@ The data must be structured as an array of objects, each object representing a p
   y: `number`,
   group: `string`
 }, ...]
-* *The X value can be of type `number` or `Date`, or a valid string representation of a Date.* 
+* *The X value can be of type `number`, `string` or `Date`.* 
 * *The Y value can be of type `number` or `null`.*
 
 ### xKey
@@ -94,15 +94,6 @@ This string is used as the accessor for the Y values of your data. **This should
 | ------------------ | ------------------ | --------- | ------------ |
 | `yKey`             | `string`           | `false`   | `A key corresponding to the properties in array of data objects used on y axis.`  |
 
-
-### xDataType *(optional)*
-
-By default, d3reactor will attempt to infer whether the data accessed by `xKey` is a valid date. *(If it is, it will transform the Date into a string to create more readable X axis ticks.)*
-By passing in a value to xDataType, you can manually set how you want d3reactor to interpret your data.
-
-| Prop               | Type                            | Optional  | Default |
-| ------------------ | ------------------              | --------- | ------- |
-| `xDataType`        | `"number"`, `"date"`, `undefined` | `true`    | `undefined` | 
 
 * *The X value can be of type `number` or `Date`, or a valid string representation of a Date.* 
 
@@ -134,7 +125,7 @@ Determines where to render the Y axis (left or right of the chart) including tic
 
 | Prop               | Type                         | Optional  | Default |
 | ------------------ | --------                     | --------- | ------- |
-| `yAxis`            | `"left"`, `"right"`, `false` | `true`    | `'bottom'` |
+| `yAxis`            | `"left"`, `"right"`, `false` | `true`    | `'left'` |
 
 * *By default, the Y axis will be rendered on the left.*
 
