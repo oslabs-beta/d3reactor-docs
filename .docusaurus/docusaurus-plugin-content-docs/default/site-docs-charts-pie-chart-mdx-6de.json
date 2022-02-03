@@ -2,7 +2,7 @@
   "unversionedId": "Charts/pie-chart",
   "id": "Charts/pie-chart",
   "title": "Pie Chart",
-  "description": "Pie chart example and sandbox here",
+  "description": "Pie Chart Sandbox",
   "source": "@site/docs/Charts/pie-chart.mdx",
   "sourceDirName": "Charts",
   "slug": "/Charts/pie-chart",

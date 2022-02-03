@@ -2,7 +2,7 @@
   "unversionedId": "Charts/line-chart",
   "id": "Charts/line-chart",
   "title": "Line Chart",
-  "description": "Line chart example and sandbox here",
+  "description": "Line Chart Sandbox",
   "source": "@site/docs/Charts/line-chart.mdx",
   "sourceDirName": "Charts",
   "slug": "/Charts/line-chart",

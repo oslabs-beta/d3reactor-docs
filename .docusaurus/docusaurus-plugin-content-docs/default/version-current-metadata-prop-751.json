@@ -58,31 +58,31 @@
     "Charts/area-chart": {
       "id": "Charts/area-chart",
       "title": "Area Chart",
-      "description": "Area chart example and sandbox here",
+      "description": "Area Chart Sandbox",
       "sidebar": "tutorialSidebar"
     },
     "Charts/bar-chart": {
       "id": "Charts/bar-chart",
       "title": "Bar Chart",
-      "description": "Bar chart example and sandbox here",
+      "description": "Bar Chart Sandbox",
       "sidebar": "tutorialSidebar"
     },
     "Charts/line-chart": {
       "id": "Charts/line-chart",
       "title": "Line Chart",
-      "description": "Line chart example and sandbox here",
+      "description": "Line Chart Sandbox",
       "sidebar": "tutorialSidebar"
     },
     "Charts/pie-chart": {
       "id": "Charts/pie-chart",
       "title": "Pie Chart",
-      "description": "Pie chart example and sandbox here",
+      "description": "Pie Chart Sandbox",
       "sidebar": "tutorialSidebar"
     },
     "Charts/scatter-plot": {
       "id": "Charts/scatter-plot",
       "title": "Scatter Plot",
-      "description": "Scatter Plot example and sandbox here",
+      "description": "Scatter Plot Sandbox",
       "sidebar": "tutorialSidebar"
     },
     "intro": {

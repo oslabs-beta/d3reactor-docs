@@ -2,7 +2,7 @@
   "unversionedId": "Charts/bar-chart",
   "id": "Charts/bar-chart",
   "title": "Bar Chart",
-  "description": "Bar chart example and sandbox here",
+  "description": "Bar Chart Sandbox",
   "source": "@site/docs/Charts/bar-chart.mdx",
   "sourceDirName": "Charts",
   "slug": "/Charts/bar-chart",
