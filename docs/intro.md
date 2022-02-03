@@ -21,13 +21,22 @@ npm i d3reactor
 yarn add d3reactor
 ```
 
-## Framework Guides
+## Import d3reactor into your React project
 
-### CRA
+```
+import * as d3reactor from "d3reactor"
+```
 
-### Next.JS
+OR you can import each chart separately 
 
-### React Native
+```
+import {AreaChart, BarChart, PieChart, ScatterPlot, LineChart} from "d3reactor"
+```
 
-### Remix
+To find examples of each chart, follow the links below: 
 
+* [Area Chart](https://www.docs.d3reactor.com/docs/Charts/area-chart)
+* [Bar Chart](https://www.docs.d3reactor.com/docs/Charts/bar-chart)
+* [Line Chart](https://www.docs.d3reactor.com/docs/Charts/line-chart)
+* [Pie Chart](https://www.docs.d3reactor.com/docs/Charts/pie-chart)
+* [Scatter Plot](https://www.docs.d3reactor.com/docs/Charts/scatter-plot)
