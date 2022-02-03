@@ -16,7 +16,7 @@ export default {
       "classic",
       {
         "docs": {
-          "sidebarPath": "/Users/travislockett/Codesmith/OSP/d3reactor-docs/sidebars.js",
+          "sidebarPath": "/Volumes/Faero2TB/DocumentsEXT/Codesmith/projects/OSP/d3reactor-docs/sidebars.js",
           "editUrl": "https://github.com/oslabs-beta/d3reactor-docs/tree/dev"
         },
         "blog": {
@@ -24,7 +24,7 @@ export default {
           "editUrl": "https://github.com/oslabs-beta/d3reactor-docs"
         },
         "theme": {
-          "customCss": "/Users/travislockett/Codesmith/OSP/d3reactor-docs/src/css/custom.css",
+          "customCss": "/Volumes/Faero2TB/DocumentsEXT/Codesmith/projects/OSP/d3reactor-docs/src/css/custom.css",
           "themes": [
             "@docusaurus/theme-live-codeblock"
           ]

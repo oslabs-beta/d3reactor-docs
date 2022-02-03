@@ -2,7 +2,7 @@
   "unversionedId": "Charts/scatter-plot",
   "id": "Charts/scatter-plot",
   "title": "Scatter Plot",
-  "description": "Scatter Plot example and sandbox here",
+  "description": "Scatter Plot Sandbox",
   "source": "@site/docs/Charts/scatter-plot.mdx",
   "sourceDirName": "Charts",
   "slug": "/Charts/scatter-plot",

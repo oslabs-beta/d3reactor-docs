@@ -175,6 +175,17 @@ Displays vertical grid lines on chart.
 | `yGrid`            | `boolean` | `true`    | `false` |
 
 
+### tooltipVisible *(optional)*
+
+Displays a tooltip at the datapoint nearest to the user's cursor
+
+| Prop               | Type      | Optional  | Default |
+| ------------------ | --------  | --------- | ------- |
+| `tooltipVisible`   | `boolean` | `true`    | `true`  |
+
+* *By default, the tooltip will render. To disable, set to `false`*
+
+
 ### legend *(optional)*
 Each chart has the option to include a legend which shows the categories and corresponding colors of your data. The legend and chart are both responsive, so they will resize to make space for each other.
 The categories reflect the list of unique values stored at the property in your dataset accessed by `groupBy`.
@@ -225,6 +236,16 @@ Sets the color scheme of the chart body.
 | ------------------ | ------------------ | --------- | ------- |
 | `colorScheme`      | `'schemeRdYlGn',` `'schemeRdYlBu',` `'schemeRdGy',` `'schemeRdBu',` `'schemePuOr',` `'schemePiYG',` `'schemePRGn',` `'schemeBrBG',` `'schemeReds',` `'schemePurples',` `'schemeOranges',` `'schemeGreys',` `'schemeGreens',` `'schemeBlues',` `'schemeSpectral'` | `true`    | `'schemePurples'` |
 
+
+### theme *(optional)*
+
+Changes the brightness of the label text, axis lines, grid lines, tooltip, and legend to suit a dark or a light background color.
+
+| Prop               | Type      | Optional  | Default |
+| ------------------ | --------  | --------- | ------- |
+| `theme` | `'light'` or `'dark'` | `true`   | `light`  |
+
+* *By default, the theme is `'light'`*
 
 
 
